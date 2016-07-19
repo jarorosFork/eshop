@@ -1,0 +1,31 @@
+<zk>
+    <library-property>
+        <name>org.zkoss.theme.preferred</name>
+        <value>breeze</value>
+    </library-property>
+    <!--
+          		Turn on if you want to ignore the consecutive click events, if it
+          		happens too close to the previous one, or the server is still serving
+          		the previous click.
+   	-->
+    <client-config>
+        <click-filter-delay>390</click-filter-delay>
+    </client-config>
+
+    <library-property>
+        <name>org.zkoss.web.preferred.locale</name>
+        <value>en</value>
+    </library-property>
+
+    <listener>
+        <listener-class>net.example.payment.system.configure.zkoss.ZKInit</listener-class>
+    </listener>
+    <!-- ====================================================== -->
+    <!--          Path to the character set and sizes           -->
+    <!--                Zkoss configuration file                -->
+    <!--         Custom components are declared here            -->
+    <!-- ====================================================== -->
+    <language-config>
+        <addon-uri>/WEB-INF/lang-addon.xml</addon-uri>
+    </language-config>
+</zk>
