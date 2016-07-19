@@ -17,9 +17,9 @@
         <value>en</value>
     </library-property>
 
-    <listener>
-        <listener-class>net.example.payment.system.configure.zkoss.ZKInit</listener-class>
-    </listener>
+    <!--<listener>-->
+        <!--<listener-class>net.example.payment.system.configure.zkoss.ZKInit</listener-class>-->
+    <!--</listener>-->
     <!-- ====================================================== -->
     <!--          Path to the character set and sizes           -->
     <!--                Zkoss configuration file                -->

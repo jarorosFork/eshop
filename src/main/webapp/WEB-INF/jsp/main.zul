@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+<window id="loginwin" border="0" apply="net.example.payment.system.zk_composers.mainpage.MainComposer" width="100%"
+        height="100%">
+<borderlayout sclass="complex-layout" height="100%" width="100%">
+<north height="40px" border="0">
+    <include src="/WEB-INF/jsp/header.zul"/>
+</north>
+<west autoscroll="true" sclass="right_menu" collapsible="true" id="west" border="0" width="290px">
+<div style="margin-right:5px;">
+<div style="margin-right:10px">
+<panel title="Quick statistic" collapsible="true" open="false">
+    <panelchildren>
+
+    </panelchildren>
+</panel>
+<panel title="Statistic" collapsible="true" open="false">
+    <panelchildren>
+        <tree id="tree" width="300px" style="text-align:left;">
+
+        </tree>
+    </panelchildren>
+</panel>
+<panel title="${labels.manage.cardholderfilters.title}" style="" collapsible="true">
+    <panelchildren>
+
+    </panelchildren>
+</panel>
+<panel title="${labels.manage.period.title}" style="" collapsible="true">
+    <panelchildren>
+
+    </panelchildren>
+</panel>
+<panel title="${labels.manage.transaction_parameters.title}" style="" collapsible="true" open="false">
+    <panelchildren>
+
+    </panelchildren>
+</panel>
+<panel title="${labels.manage.parameters.title}" style="" open="false" collapsible="true">
+    <panelchildren>
+
+    </panelchildren>
+</panel>
+<div style="padding-left:5px;">
+    <button id="refreshBtn" label="${labels.manage.button.refresh}" mold="os" width="90px" height="25px"/>
+    <button id="debug" label="Generate 100 transactions" mold="os" width="250px" height="25px"/>
+</div>
+</div>
+</div>
+</west>
+<center border="0" autoscroll="true">
+    <div height="100%">
+
+    </div>
+</center>
+</borderlayout>
+</window>
+</zk>
